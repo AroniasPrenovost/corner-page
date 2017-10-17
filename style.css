@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	width:100%;
+	height:auto;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: white;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+	padding-left: 2%;
+}
+
+.navbar-nav{
+	float:right;
+	padding-right:2%;
+}
+
+.intro-masthead {
+	width:90%;
+	margin-left:1%;
+	height:100vh;
+	margin-top:60px;
+	margin: 0 auto;
+	background-color:#1abc9c;
+}
+
+
+#upper_left {
+	width: 125px; 
+	height: 95px;
+	position: fixed;
+	top: 0; 
+	font-size:3em;
+}
+
+#upper_right {
+	width: 125px; 
+	height: 95px;
+
+	position:fixed;
+	font-size:3em;
+	top: 0;
+	right: 0%;
+}
+
+#mid_left {
+	width: 145px; 
+	height: 40px;
+	position: fixed;
+	bottom: 42.5%; 
+	left: 0;
+	position: fixed;
+	background-color: none;
+}
+
+img {
+	height:18px;
+	width:18px;
+}
+
+#lower_left {
+	width: 125px; 
+	height: 40px;
+	position: fixed;
+	bottom: 0%; 
+	left: 0;
+	position: fixed;
+	background-color: none;
+}
+
+#lower_right {
+	width: 125px; 
+	height: 75px;
+	bottom: 0%;
+	right: 0%;
+	position: fixed;
+	background-color: none;
+}
+
+a { 
+	color: black; 
+	text-decoration: none; 
+}
+
+
+p {
+	margin-bottom: -40px !important;
+	margin-right: 45px;
+	font-size: .8em;
+}
+
+.mid-icons {
+	float:right;
+	margin-right:30px;
+	margin-top: -15px;
+
+}
+
+.sideways:nth-child(2) {
+	margin-top: 0px !important;
+	margin-left: 45px;
+}
+
+.arrow {
+	text-align: center;
+	margin: 10% 0;
+}
+
+.arrow:nth-child(2) {
+	text-align: center;
+	margin: 12% 0;
+}
+
+.sideways {
+	-webkit-transform: rotate(90deg);
+
+}
+
+.upsidedown {
+	-moz-transform:rotate(-180deg); /* Firefox */
+	-webkit-transform:rotate(-180deg); /* Webkit */        
+	-ms-transform:rotate(-180deg); /* IE */
+	-o-transform:rotate(-180deg); /* Opera */
+	transform:rotate(-180deg); /* future */
+	position:absolute;
+}
+
+.bounce {
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-18px);
+	}
+	60% {
+		transform: translateY(-12px);
+	}
+}
