@@ -51,12 +51,9 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 icon.onclick = function() {
 // if modal is visible, hide up/down arrows and remove content
-
-
 $('#content-panel').fadeOut();
 $('#lower_right').fadeOut();
 $('#lower_left').fadeOut();
-
 $('#content-panel').animate({width: '92%', marginLeft: '4%'}, 500);
 $('.container-fluid').animate({paddingTop: '6%', paddingLeft: '6%'}, 500);
 $('.nav.navbar-nav').animate({marginRight: '6%'}, 500);
@@ -64,16 +61,16 @@ $('.nav.navbar-nav').animate({marginRight: '6%'}, 500);
 icon.style.display = "none";
 // $('#content-panel').animate({marginLeft: '91%', width:'5%'}, 1000);
 setTimeout(function(){
-    $('.modal-body').animate({width: '80%'}, 350); 
+    $('.modal-body').animate({width: '90%'}, 350); 
     modal.style.display = "block";
-    modal.style.height = "100vh";
+    modal.style.height = "80vh";
 document.body.style.overflow = 'hidden'; // hide scroll bar 
-}, 650);
+}, 120);
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
+    $('.modal-body').animate({width: '40%'}, 500); 
     $('.container-fluid').animate({paddingTop: '0%', paddingLeft: '0%'}, 500);
     $('.nav.navbar-nav').animate({marginRight: '0%'}, 500);
     icon.style.display = "block";
@@ -81,6 +78,7 @@ span.onclick = function() {
     $('#lower_left').fadeIn();
     $('#lower_right').fadeIn();
 document.body.style.overflow = 'visible'; // restore scroll bar 
+modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it

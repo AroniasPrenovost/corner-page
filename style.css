@@ -28,11 +28,79 @@ html, body {
 	background-color:red;
 }
 
-.panel2 {
-	width:92%;
+.panel_2 {
+	background: url('desk.jpg')no-repeat;
+	position: relative;
+	height:80vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.panel_3 {
+	width:100%;
 	height:100vh;
-	margin: 0% 4% 4% 4%;
+	margin: 0% 0% 0% 0%;
+	background-color:orange;
+}
+
+.four_container {
+	text-align: center;
+	max-width: 450px;
+	margin: 0 auto;
+	float:right;
+}
+.block {
+	width: 200px;
+	margin-right:0px;
+	height: 200px;
+	margin: 0px;
+	display: inline-block;
+	background: #00CC99;
+}
+
+.block:nth-child(2) {
+	margin-left:-1%;
+}
+
+.block:nth-child(4) {
+	margin-left:-1%;
+}
+
+.panel_4 {
+	width:100%;
+	height:100vh;
+	margin: 0% 0% 0% 0%;
+	background-color:transparent;
+}
+
+.p4_right {
+	width:50%;
+	height:50vh;
+	background-color: cyan;
+	float:right;
+}
+.p4_mid {
+	width:100%;
+	height:50vh;
+	background-color: cyan;
+	float:right;
+	text-align:center;
+}
+
+.p_text_overlay {
+	width:20%;
 	background-color:red;
+	text-align: left;
+	margin-left:15%;
+}
+
+.panel_5 {
+	width:100%;
+	height:100vh;
+	margin: 0% 0% 0% 0%;
+	background-color:blue;
 }
 
 .navbar{
@@ -70,19 +138,36 @@ html, body {
 	top:50%;
 	bottom:0;
 	left: 2.5%;
+	z-index: 1;
+}
+
+#mid_right {
+	position: fixed;
+	top:45%;
+	bottom:0;
+	right: 1.5%;
+}
+
+#mid_right ul {
+	list-style: none;
+}
+
+#mid_right ul a {
+	text-decoration: none;
 }
 
 #lower_left {
 	position: fixed;
 	bottom:3.5%;
 	left: 4%;
-
+	z-index: 1;
 }
+
 #lower_right {
 	bottom: 3.5%;
 	right: 4%;
 	position: fixed;
-
+	z-index: 1;
 }
 a, hover { 
 	color: black; 
@@ -115,8 +200,6 @@ a, hover {
 	line-height:5px;
 
 }
-
-
 
 #mid_left a:hover, a:visited  {
 	text-decoration: none;
@@ -179,10 +262,6 @@ width:100%;
 background-color: rgb(0,0,0); 
 background-color: rgba(1,1,1,0.0); *//* Black w/ opacity */
 }
-
-
-
-
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
